@@ -1,13 +1,14 @@
 import React from 'react'
-import './Header.css'
+import './css/Header.css'
+import { changePage, resetPage } from './utils'
 
 function Header() {
 	return (
 		<div>
-			<a href=""><h1 id="title">City & Zip Code Lookup</h1></a>
+			<h1 id="title" onClick={resetPage}>City & Zip Code Lookup</h1>
 			<nav>
-				<a href=''><h1 className="button">Search by City</h1></a>
-				<a href=''><h1 className="button">Search by Zip Code</h1></a>
+				<h1 className="button" id="city-button" onClick={changePage}>Search by City</h1>
+				<h1 className="button" id="zip-button" onClick={changePage}>Search by Zip Code</h1>
 			</nav>
 		</div>
 	)

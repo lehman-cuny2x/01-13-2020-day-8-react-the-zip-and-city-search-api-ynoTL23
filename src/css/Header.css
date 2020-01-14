@@ -6,10 +6,10 @@
     box-shadow: 0px 1px 10px #eceff4;
 }
 
-div a #title {
+div #title {
     margin: 1rem;
-    color: #ebcb8b;
     padding: 2rem;
+    color: #ebcb8b;
 }
 
 div nav {
@@ -29,14 +29,12 @@ div nav .button {
 }
 
 div nav .button:hover {
+    cursor: pointer;
     background-color: #bf616a;
     color: #eceff4;
     border: 1px #eceff4 solid;
 }
 
-
-div nav .current {
-    background-color: #ebcb8b;
-    color: #4c566a;
-    border: 1px #4c566a solid;
+div #title:hover {
+    cursor: pointer;
 }

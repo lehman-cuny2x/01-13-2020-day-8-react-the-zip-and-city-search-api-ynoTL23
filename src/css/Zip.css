@@ -1,0 +1,23 @@
+body #content .instructions {
+	margin: auto;
+	padding: 5rem 1rem;
+	text-align: center;
+	font-size: 2rem;
+}
+
+div nav .current {
+    background-color: #ebcb8b;
+    color: #4c566a;
+    border: 1px #4c566a solid;
+}
+
+/* Hide arrows from input field */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+/* For Firefox browsers */
+input[type='number'] {
+	-moz-appearance: textfield;
+}
