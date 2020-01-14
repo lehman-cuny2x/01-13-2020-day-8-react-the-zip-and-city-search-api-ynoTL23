@@ -4,6 +4,7 @@ import { Route, Link, Switch, BrowserRouter as Router } from 'react-router-dom'
 import Home from './Home'
 import CitySearch from './CitySearch'
 import ZipSearch from './ZipSearch'
+import PageNotFound from './PageNotFound'
 import * as serviceWorker from './serviceWorker'
 import './css/index.css'
 
@@ -27,6 +28,7 @@ const routing = (
 				<Route exact path='/' component={Home} />
 				<Route path='/city-search' component={CitySearch} />
 				<Route path='/zip-search' component={ZipSearch} />
+				<Route component={PageNotFound} />
 			</Switch>
 		</div>
 	</Router>

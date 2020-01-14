@@ -1,0 +1,7 @@
+#PageNotFound h1 {
+    margin: auto;
+	padding: 5rem 1rem;
+	text-align: center;
+    font-size: 2rem;
+    color: red;
+}
