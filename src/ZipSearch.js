@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './css/index.css'
-import './css/Zip.css'
+import './css/ZipSearch.css'
 
 export default class Zip extends Component {
     render() {
