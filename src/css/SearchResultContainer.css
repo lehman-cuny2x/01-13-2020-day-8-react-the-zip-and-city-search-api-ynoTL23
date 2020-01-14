@@ -1,0 +1,63 @@
+#root #error h1 {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+
+    color: #ebcb8b;
+}
+
+/* Container for all boxes */
+#root #container h1 {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+
+    color: #d8dee9;
+}
+
+#root #content #container {
+    margin: auto 5rem;
+    padding: 1rem;
+    height: fit-content;
+}
+
+/* Individual boxes */
+#root #content .city-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    background-color: #d8dee9;
+    border: 1px #434c5e solid;
+    border-radius: 15px;
+}
+
+#root #content .title-bar {
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 3px 2px #000;
+    background-color: #434c5e;
+
+}
+
+#root #content .title-bar .city-name {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #eceff4;
+}
+
+#root #content .city-container .stats ul {
+    padding: 1rem;
+    list-style: none;
+}
+
+#root #content .city-container .stats ul li,
+#root #content .city-container .stats ul li b {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: #4c566a;
+}

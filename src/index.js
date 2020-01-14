@@ -8,9 +8,9 @@ import PageNotFound from './PageNotFound'
 import * as serviceWorker from './serviceWorker'
 import './css/index.css'
 
-const routing = (
+const navigation = (
 	<Router>
-		<div>
+		<div id='header'>
 			<header>
 				<Link to='/'>
 					<h1 id='title'>City & ZIP Code Lookup</h1>
@@ -24,17 +24,17 @@ const routing = (
 					</Link>
 				</nav>
 			</header>
-			<Switch>
-				<Route exact path='/' component={Home} />
-				<Route path='/city-search' component={CitySearch} />
-				<Route path='/zip-search' component={ZipSearch} />
-				<Route component={PageNotFound} />
-			</Switch>
 		</div>
+		<Switch>
+			<Route exact path='/' component={Home} />
+			<Route path='/city-search' component={CitySearch} />
+			<Route path='/zip-search' component={ZipSearch} />
+			<Route component={PageNotFound} />
+		</Switch>
 	</Router>
 )
 
-ReactDOM.render(routing, document.getElementById('header'))
+ReactDOM.render(navigation, document.getElementById('root'))
 
 // If you want your App to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -11,6 +11,7 @@ export default class City extends Component {
 					<input type='text' title='Enter a US city name' placeholder='ex: Los Angeles' />
 					<h1 id='search-button' onClick={() => eventHandler.callAPI('city')}>Search</h1>
 				</div>
+				<div id="content"></div>
 			</div>
 		)
     }

@@ -1,11 +1,11 @@
-body #header .instructions {
+body #root .instructions {
 	margin: auto;
 	padding: 5rem 1rem;
 	text-align: center;
 	font-size: 1.5rem;
 }
 
-body #header .instructions input {
+body #root .instructions input {
 	margin: 1.5rem 1rem;
 	padding: 1rem;
 	width: auto;
@@ -15,11 +15,11 @@ body #header .instructions input {
 	border: 1px #88c0d0 solid;
 }
 
-body #header .instructions input:focus {
+body #root .instructions input:focus {
 	border: 3px #88c0d0 solid;
 }
 
-body #header .instructions #search-button {
+body #root .instructions #search-button {
 	margin: auto;
 	padding: 0.5rem 5rem;
 	width: fit-content;
@@ -27,7 +27,7 @@ body #header .instructions #search-button {
 	border: 1px #a3be8c solid;
 }
 
-body #header .instructions #search-button:hover {
+body #root .instructions #search-button:hover {
 	cursor: pointer;
 	color: #a3be8c;
 	background-color: #eceff4;
