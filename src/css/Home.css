@@ -1,17 +1,18 @@
 body #root .instructions {
 	margin: auto;
-	padding: 5rem 1rem;
+	padding: 5rem 1rem 1rem 1rem;
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 body #root .instructions input {
 	margin: 1.5rem 1rem;
 	padding: 1rem;
 	width: auto;
+	text-align: center;
 	color: #4c566a;
-	background-color: #eceff4;
 	font-size: 2rem;
+	background-color: #eceff4;
 	border: 1px #88c0d0 solid;
 }
 

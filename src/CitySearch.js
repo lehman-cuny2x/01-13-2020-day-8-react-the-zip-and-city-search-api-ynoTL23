@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './css/CitySearch.css'
 let eventHandler = require('./utils.js')
 
-export default class City extends Component {
+export default class CitySearch extends Component {
     render() {
         return (
 			<div>

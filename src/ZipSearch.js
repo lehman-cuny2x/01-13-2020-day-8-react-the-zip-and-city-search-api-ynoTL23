@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './css/ZipSearch.css'
 let eventHandler = require('./utils.js')
 
-export default class Zip extends Component {
+export default class ZipSearch extends Component {
     render() {
         return (
 			<div>

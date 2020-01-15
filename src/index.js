@@ -16,12 +16,8 @@ const navigation = (
 					<h1 id='title'>City & ZIP Code Lookup</h1>
 				</Link>
 				<nav>
-					<Link to='/city-search' className='button' id='city-button'>
-						Search by City
-					</Link>
-					<Link to='/zip-search' className='button' id='zip-button'>
-						Search by ZIP Code
-					</Link>
+					<Link to='/city-search' className='button' id='city-button'>Search by City</Link>
+					<Link to='/zip-search' className='button' id='zip-button'>Search by ZIP Code</Link>
 				</nav>
 			</header>
 		</div>

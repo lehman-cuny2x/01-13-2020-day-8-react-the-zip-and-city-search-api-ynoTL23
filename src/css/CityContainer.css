@@ -1,0 +1,37 @@
+/* Individual boxes */
+#root #content .city-container {
+    margin: 1rem 3rem;
+    width: max-content;
+    height: max-content;
+    background-color: #d8dee9;
+    border-radius: 15px;
+}
+
+#root #content .title-bar {
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 3px 2px #000;
+    background-color: #434c5e;
+
+}
+
+#root #content .title-bar .city-name {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #eceff4;
+}
+
+#root #content .city-container .stats ul {
+    padding: 1rem;
+    list-style: none;
+}
+
+#root #content .city-container .stats ul li,
+#root #content .city-container .stats ul li b {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: #4c566a;
+}

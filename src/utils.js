@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Container, CityContainer, ErrorContainer } from './SearchResultContainer'
+import { Container, ErrorContainer } from './SearchResultContainer'
+import CityContainer from './CityContainer'
 const apiURL = 'http://ctp-zip-api.herokuapp.com/'
 
 // method: the method of search (cityname or zip code)
@@ -13,16 +14,28 @@ export const callAPI = method => {
 			searchByCity()
 				.then(data => {
 					ReactDOM.render(<Container />, document.getElementById('content'))
+					ReactDOM.render(<CityContainer />, document.getElementById('container'))
 				})
 				.catch(err => {
 					console.log(err)
 				})
-			break
-		case 'zip':
-			searchByZip()
-				.then(data => {
-					ReactDOM.render(<Container />, document.getElementById('content'))
-					ReactDOM.render(<CityContainer state='NY' location='(71, -80)' population={123000} total_wages={12345}/>, document.getElementById('container'))
+				break
+				case 'zip':
+					searchByZip()
+					.then(data => {
+						ReactDOM.render(<Container />, document.getElementById('content')) // render container to hold each city container
+						// render each city's container and information
+						const cities = data.map(city => (
+							<CityContainer
+								city={city['LocationText']}
+								state={city['State']}
+								location={`${city['Lat']}, ${city['Long']}`}
+								population={city['EstimatedPopulation']}
+								total_wages={city['TotalWages']}
+							/>
+						))
+						// render the cities
+						ReactDOM.render(cities, document.getElementById('container'))
 				})
 				.catch(err => {
 					console.log(err)
